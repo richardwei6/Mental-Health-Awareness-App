@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:background="@drawable/roundedcorner"
+        android:id="@+id/settingsButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="settingClick"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar"
+        app:layout_constraintStart_toEndOf="@+id/listButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
+        app:srcCompat="@drawable/ic_settings" />
+
+    <ImageButton
+        android:id="@+id/listButton"
+        android:background="@drawable/roundedcorner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="listClick"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar"
+        app:layout_constraintStart_toStartOf="@+id/bottomAppBar"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
+        app:srcCompat="@drawable/ic_format_list_bulleted" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedcorner"
+        android:onClick="homeClick"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toStartOf="@+id/listButton"
+        app:layout_constraintStart_toStartOf="@+id/bottomAppBar"
+        app:layout_constraintTop_toTopOf="@+id/bottomAppBar"
+        app:srcCompat="@drawable/ic_home" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:text="List View"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
