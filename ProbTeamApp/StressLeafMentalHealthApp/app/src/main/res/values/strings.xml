@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StressLeaf Mental Health App</string>
+    <string name="action_settings">Settings</string>
+    <string name="Article1_Title">Article 1 Title</string>
+    <string name="Article2_Title">Article 2 Title</string>
+    <string name="Article3_Title">Article 3 Title</string>
+    <string name="Article4_Title">Article 4 Title</string>
+    <string name="Article5_Title">Article 5 Title</string>
+
+</resources>
