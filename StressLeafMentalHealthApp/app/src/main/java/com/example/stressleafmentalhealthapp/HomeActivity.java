@@ -17,19 +17,19 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
-    Button btn1, btn2, btn3, btn4, btn5;
+    float fontSize = 14; // default font
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn1 = (Button) findViewById(R.id.GoToArticle1_btn);
-        btn2 = (Button) findViewById(R.id.GoToArticle2_btn);
-        btn3 = (Button) findViewById(R.id.GoToArticle3_btn);
-        btn4 = (Button) findViewById(R.id.GoToArticle4_btn);
-        btn5 = (Button) findViewById(R.id.GoToArticle5_btn);
+        Button btn1 = (Button) findViewById(R.id.GoToArticle1_btn);
+        Button btn2 = (Button) findViewById(R.id.GoToArticle2_btn);
+        Button btn3 = (Button) findViewById(R.id.GoToArticle3_btn);
+        Button btn4 = (Button) findViewById(R.id.GoToArticle4_btn);
+        Button btn5 = (Button) findViewById(R.id.GoToArticle5_btn);
 
-        LinearLayout layout = (LinearLayout) findViewById(R.id.HomeLayout);
-
+        /*androidx.constraintlayout.widget.ConstraintLayout layout = (androidx.constraintlayout.widget.ConstraintLayout) findViewById(R.id.HomeLayout);
+        // TODO: ^ causes the app to crash - https://github.com/richardwei6/Mental-Health-Awareness-App/issues/1
         for( int i = 0; i < layout.getChildCount(); i++ ){
 
             if( layout.getChildAt( i ) instanceof TextView )
@@ -38,10 +38,10 @@ public class HomeActivity extends AppCompatActivity {
                 TextView text = (TextView) layout.getChildAt( i );
                 text.setTypeface(Typeface.createFromAsset(getAssets(),"@fonts/FiraSans-Regular"));
 
-            }
-        }
+            } // needs to be in a different function
+        }*/
     }
-
+    // TODO: when opening list view and articles on a real device, it causes 140+ skipped frames - needs optimization/reduce asset file sizes. https://stackoverflow.com/questions/14678593/the-application-may-be-doing-too-much-work-on-its-main-thread/21126690
     public void setHomeview(View view)
     {
         setContentView((R.layout.activity_main));
@@ -76,7 +76,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView((R.layout.article5_layout));
     }
 
-    @Override
+   /* @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -96,5 +96,5 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }

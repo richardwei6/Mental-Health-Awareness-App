@@ -5,7 +5,8 @@
     android:id="@+id/HomeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:background= "@drawable/treepage_back">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -23,15 +24,14 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/roundedbutton"
+        app:srcCompat="@drawable/ic_format_list_bulleted"
         android:onClick="setListview"
-
         app:layout_constraintBottom_toTopOf="@+id/AppBarArticle1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.967"
-        app:srcCompat="@drawable/ic_format_list_bulleted" />
+        app:layout_constraintVertical_bias="0.967" />
 
     <Button
         android:id="@+id/GoToArticle1_btn"
@@ -44,14 +44,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
-
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/AppBarArticle1"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
         android:layout_width="fill_parent"
         android:layout_height="70dp"
         android:layout_gravity="bottom"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/AppBarColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -66,11 +65,13 @@
         android:layout_marginEnd="80dp"
         android:layout_marginRight="80dp"
         android:onClick="setSettingsview"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/settingsnoton"
         app:layout_constraintBottom_toBottomOf="@+id/AppBarArticle1"
         app:layout_constraintEnd_toEndOf="@+id/AppBarArticle1"
         app:layout_constraintTop_toTopOf="@+id/AppBarArticle1"
-        app:layout_constraintVertical_bias="0.55"
-        />
+        app:layout_constraintVertical_bias="0.55" />
 
     <ImageButton
         android:id="@+id/Article1_Home_Button"
@@ -78,8 +79,10 @@
         android:layout_height="50dp"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
-
-        android:src="@android:drawable/stat_sys_warning"
+        android:onClick="setHomeview"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/homenoton"
         app:layout_constraintBottom_toBottomOf="@+id/AppBarArticle1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/AppBarArticle1" />
