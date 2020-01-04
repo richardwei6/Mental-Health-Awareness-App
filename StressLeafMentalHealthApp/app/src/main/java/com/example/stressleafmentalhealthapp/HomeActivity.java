@@ -56,7 +56,6 @@ public class HomeActivity extends AppCompatActivity {
         }*/
 
     }
-    // TODO: when opening list view and articles on a real device, it causes 140+ skipped frames - needs optimization/reduce asset file sizes. https://stackoverflow.com/questions/14678593/the-application-may-be-doing-too-much-work-on-its-main-thread/21126690
     public void setHomeview(View view)
     {
         setContentView((R.layout.activity_main));
