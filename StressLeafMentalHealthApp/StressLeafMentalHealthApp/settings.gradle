@@ -1,0 +1,2 @@
+rootProject.name='StressLeaf Mental Health App'
+include ':app'
