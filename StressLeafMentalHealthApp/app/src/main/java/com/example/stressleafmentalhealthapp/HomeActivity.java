@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
-    float fontSize = 14; // default font
+    float fontSize = 14; // default font size
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
