@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background_final" />
+        app:srcCompat="@drawable/green_gradient_background" />
 
     <TextView
         android:id="@+id/Article3Title"
@@ -24,7 +24,9 @@
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
         android:layout_marginTop="30dp"
-        android:fontFamily="sans-serif-black"
+        android:background="#4B297E03"
+        android:fontFamily="@font/firasans_bold"
+        android:padding="10sp"
         android:text="@string/Article3_Title"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
@@ -34,11 +36,11 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@id/AppBarArticle3"
+        app:layout_constraintBottom_toTopOf="@id/AppBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +72,10 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginRight="40dp"
+                android:background="#4B297E03"
+                android:fontFamily="@font/firasans_regular"
                 android:lineSpacingExtra="8sp"
+                android:padding="10sp"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus molestie nunc non. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Feugiat in fermentum posuere urna. Mattis nunc sed blandit libero volutpat sed cras ornare. Enim facilisis gravida neque convallis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Egestas sed tempus urna et pharetra pharetra massa massa. Odio ut enim blandit volutpat. Aliquam nulla facilisi cras fermentum odio. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Pretium lectus quam id leo in vitae turpis massa sed. Ipsum a arcu cursus vitae. Senectus et netus et malesuada fames.
 
 Habitant morbi tristique senectus et netus et malesuada fames. Eget est lorem ipsum dolor sit amet consectetur. Arcu bibendum at varius vel. Id aliquet risus feugiat in ante metus dictum at tempor. Vitae congue eu consequat ac. Ultricies mi eget mauris pharetra. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Eget duis at tellus at urna condimentum mattis. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Erat pellentesque adipiscing commodo elit at. Ipsum faucibus vitae aliquet nec ullamcorper sit.
@@ -83,7 +88,7 @@ Erat velit scelerisque in dictum non consectetur a erat nam. Arcu dui vivamus ar
                 android:textColor="#F0F3F0"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView"
                 tools:layout_conversion_absoluteHeight="2811dp"
@@ -91,48 +96,9 @@ Erat velit scelerisque in dictum non consectetur a erat nam. Arcu dui vivamus ar
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/AppBarArticle3"
-        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:layout_gravity="bottom"
-        app:backgroundTint="@color/AppBarColor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageButton
-        android:id="@+id/Article3_Settings_Button"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:onClick="setSettingsview"
-        android:background="#00FFFFFF"
-        android:scaleType="fitCenter"
-        android:src="@drawable/settingsnoton"
-        app:layout_constraintBottom_toBottomOf="@+id/AppBarArticle3"
-        app:layout_constraintEnd_toEndOf="@+id/AppBarArticle3"
-        app:layout_constraintTop_toTopOf="@+id/AppBarArticle3"
-        app:layout_constraintVertical_bias="0.55" />
-
-    <ImageButton
-        android:id="@+id/Article3_Home_Button"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:onClick="setHomeview"
-        android:background="#00FFFFFF"
-        android:scaleType="fitCenter"
-        android:src="@drawable/homenoton"
-        app:layout_constraintBottom_toBottomOf="@+id/AppBarArticle3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/AppBarArticle3" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/navigation_bar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

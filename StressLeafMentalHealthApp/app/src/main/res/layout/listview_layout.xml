@@ -6,137 +6,126 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_final">
 
-    <Button
-        android:id="@+id/listview_layout_GoToArticle1_btn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/listview_rounded_btn_background"
-        android:gravity="left"
-        android:padding="15sp"
-        android:text="@string/Article1_Title"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/listview_layout_GoToArticle2_btn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/listview_rounded_btn_background"
-        android:gravity="left"
-        android:padding="15sp"
-        android:text="@string/Article2_Title"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listview_layout_GoToArticle1_btn" />
-
-    <Button
-        android:id="@+id/listview_layout_GoToArticle3_btn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/listview_rounded_btn_background"
-        android:gravity="left"
-        android:padding="15sp"
-        android:text="@string/Article3_Title"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listview_layout_GoToArticle2_btn" />
-
-    <Button
-        android:id="@+id/listview_layout_GoToArticle4_btn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/listview_rounded_btn_background"
-        android:gravity="left"
-        android:padding="15sp"
-        android:text="@string/Article4_Title"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listview_layout_GoToArticle3_btn" />
-
-    <Button
-        android:id="@+id/listview_layout_GoToArticle5_btn"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="25dp"
-        android:background="@drawable/listview_rounded_btn_background"
-        android:gravity="left"
-        android:padding="15sp"
-        android:text="@string/Article5_Title"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listview_layout_GoToArticle4_btn" />
-
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/AppBarArticle1"
-        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:layout_gravity="bottom"
-        app:backgroundTint="@color/AppBarColor"
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageButton
-        android:id="@+id/Article1_Settings_Button"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:onClick="setSettingsview"
-        android:background="#00FFFFFF"
-        android:scaleType="fitCenter"
-        android:src="@drawable/settingsnoton"
-        app:layout_constraintBottom_toBottomOf="@+id/AppBarArticle1"
-        app:layout_constraintEnd_toEndOf="@+id/AppBarArticle1"
-        app:layout_constraintTop_toTopOf="@+id/AppBarArticle1"
-        app:layout_constraintVertical_bias="0.55" />
-
-    <ImageButton
-        android:id="@+id/Article1_Home_Button"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:onClick="setHomeview"
-        android:background="#00FFFFFF"
-        android:scaleType="fitCenter"
-        android:src="@drawable/homenoton"
-        app:layout_constraintBottom_toBottomOf="@+id/AppBarArticle1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/AppBarArticle1" />
+        app:layout_constraintTop_toTopOf="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/listview_layout_GoToArticle1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/listview_rounded_btn_background"
+                android:gravity="left"
+                android:onClick="OpenArticle1"
+                android:padding="15sp"
+                android:text="@string/Article1_Title"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/listview_layout_GoToArticle2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/listview_rounded_btn_background"
+                android:gravity="left"
+                android:onClick="OpenArticle2"
+                android:padding="15sp"
+                android:text="@string/Article2_Title"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/listview_layout_GoToArticle3_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/listview_rounded_btn_background"
+                android:gravity="left"
+                android:onClick="OpenArticle3"
+                android:padding="15sp"
+                android:text="@string/Article3_Title"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/listview_layout_GoToArticle4_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/listview_rounded_btn_background"
+                android:gravity="left"
+                android:onClick="OpenArticle4"
+                android:padding="15sp"
+                android:text="@string/Article4_Title"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/listview_layout_GoToArticle5_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/listview_rounded_btn_background"
+                android:gravity="left"
+                android:onClick="OpenArticle5"
+                android:padding="15sp"
+                android:text="@string/Article5_Title"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/listview_layout_GoToArticle6_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/listview_rounded_btn_background"
+                android:gravity="left"
+                android:minHeight="48dip"
+                android:onClick="OpenArticle6"
+                android:padding="15sp"
+                android:text="@string/Article6_Title"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/navigation_bar" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

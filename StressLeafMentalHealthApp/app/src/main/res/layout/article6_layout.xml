@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/green_gradient_background" />
 
     <TextView
-        android:id="@+id/Article4Title"
+        android:id="@+id/Article1Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -27,7 +27,7 @@
         android:background="#4B297E03"
         android:fontFamily="@font/firasans_bold"
         android:padding="10sp"
-        android:text="@string/Article4_Title"
+        android:text="@string/Article6_Title"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,11 +44,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Article4Title"
+        app:layout_constraintTop_toBottomOf="@+id/Article1Title"
         app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/Article4ConstraintLayout"
+            android:id="@+id/Article1ConstraintLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -65,7 +65,7 @@
                 tools:layout_conversion_absoluteWidth="409dp" />
 
             <TextView
-                android:id="@+id/Article4Text"
+                android:id="@+id/Article6Text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -88,7 +88,6 @@ Erat velit scelerisque in dictum non consectetur a erat nam. Arcu dui vivamus ar
                 android:textColor="#F0F3F0"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView"
                 tools:layout_conversion_absoluteHeight="2811dp"

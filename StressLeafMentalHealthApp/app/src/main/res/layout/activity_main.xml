@@ -5,126 +5,130 @@
     android:id="@+id/HomeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity"
-    android:background= "@drawable/treepage_back">
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".HomeActivity">
 
     <ImageButton
         android:id="@+id/listButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/roundedbutton"
-        app:srcCompat="@drawable/ic_format_list_bulleted"
         android:onClick="setListview"
-        app:layout_constraintBottom_toTopOf="@+id/AppBarArticle1"
+        app:layout_constraintBottom_toBottomOf="@+id/treehome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.967" />
+        app:layout_constraintVertical_bias="0.91"
+        app:srcCompat="@drawable/ic_format_list_bulleted" />
+
+    <ImageView
+        android:id="@+id/treehome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/treehome" />
 
     <Button
         android:id="@+id/GoToArticle1_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/leaf1"
         android:onClick="OpenArticle1"
         android:text="1"
-        app:layout_constraintBottom_toTopOf="@+id/AppBarArticle1"
+        app:layout_constraintBottom_toBottomOf="@+id/GoToArticle4_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/AppBarArticle1"
-        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:layout_gravity="bottom"
-        app:backgroundTint="@color/AppBarColor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageButton
-        android:id="@+id/Article1_Settings_Button"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:onClick="setSettingsview"
-        android:background="#00FFFFFF"
-        android:scaleType="fitCenter"
-        android:src="@drawable/settingsnoton"
-        app:layout_constraintBottom_toBottomOf="@+id/AppBarArticle1"
-        app:layout_constraintEnd_toEndOf="@+id/AppBarArticle1"
-        app:layout_constraintTop_toTopOf="@+id/AppBarArticle1"
-        app:layout_constraintVertical_bias="0.55" />
-
-    <ImageButton
-        android:id="@+id/Article1_Home_Button"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:onClick="setHomeview"
-        android:background="#00FFFFFF"
-        android:scaleType="fitCenter"
-        android:src="@drawable/homenoton"
-        app:layout_constraintBottom_toBottomOf="@+id/AppBarArticle1"
+        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/AppBarArticle1" />
+        app:layout_constraintTop_toBottomOf="@+id/GoToArticle6_btn"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/GoToArticle2_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/leaf2"
         android:onClick="OpenArticle2"
         android:text="2"
-        app:layout_constraintBottom_toTopOf="@+id/GoToArticle1_btn"
+        app:layout_constraintBottom_toTopOf="@+id/GoToArticle6_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 
     <Button
         android:id="@+id/GoToArticle3_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/leaf3"
         android:onClick="OpenArticle3"
         android:text="3"
-        app:layout_constraintBottom_toTopOf="@+id/GoToArticle2_btn"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
 
     <Button
         android:id="@+id/GoToArticle4_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/leaf4"
         android:onClick="OpenArticle4"
         android:text="4"
-        app:layout_constraintBottom_toTopOf="@+id/GoToArticle3_btn"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.672" />
 
     <Button
         android:id="@+id/GoToArticle5_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/leaf5"
         android:onClick="OpenArticle5"
         android:text="5"
-        app:layout_constraintBottom_toTopOf="@+id/GoToArticle4_btn"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toStartOf="@+id/GoToArticle3_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/treehome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/GoToArticle6_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/leaf6"
+        android:onClick="OpenArticle6"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.742" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/navigation_bar"
+        app:layout_constraintEnd_toEndOf="@+id/treehome"
+        tools:layout_editor_absoluteY="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

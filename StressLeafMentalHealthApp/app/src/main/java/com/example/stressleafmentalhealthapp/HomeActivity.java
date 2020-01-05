@@ -1,5 +1,6 @@
 package com.example.stressleafmentalhealthapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
@@ -20,46 +21,27 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
-    int fontSize = 14;
+    int fontSize = 14; // default value
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btn1 = (Button) findViewById(R.id.GoToArticle1_btn);
-        Button btn2 = (Button) findViewById(R.id.GoToArticle2_btn);
-        Button btn3 = (Button) findViewById(R.id.GoToArticle3_btn);
-        Button btn4 = (Button) findViewById(R.id.GoToArticle4_btn);
-        Button btn5 = (Button) findViewById(R.id.GoToArticle5_btn);
-
-        /*SharedPreferences getsp  = PreferenceManager.getDefaultSharedPreferences(this);
-        int savedfontsize = getsp.getInt("SavedFontSize",fontSize);
-        if (savedfontsize == fontSize){
-            SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
-            SharedPreferences.Editor editor = sp.edit();
-            editor.putInt("SavedFontSize",fontSize);// saves fontSize
-            editor.apply();
+        SharedPreferences sp = getSharedPreferences("font_pref", Activity.MODE_PRIVATE);
+        if (sp.contains("font_key")){
+            int saved_fontSize = sp.getInt("font_key", fontSize);
+            fontSize = saved_fontSize;
         }
-        fontSize = savedfontsize;*/
-        //TODO: fix saving the fontsize method ^
-
-        /*androidx.constraintlayout.widget.ConstraintLayout layout = (androidx.constraintlayout.widget.ConstraintLayout) findViewById(R.id.HomeLayout);
-        // TODO: ^ causes the app to crash - https://github.com/richardwei6/Mental-Health-Awareness-App/issues/1
-        for( int i = 0; i < layout.getChildCount(); i++ ){
-
-            if( layout.getChildAt( i ) instanceof TextView )
-            {
-                // change the values of text view here
-                TextView text = (TextView) layout.getChildAt( i );
-                text.setTypeface(Typeface.createFromAsset(getAssets(),"@fonts/FiraSans-Regular"));
-
-            } // needs to be in a different function
-        }*/
-
+        else{
+            SharedPreferences.Editor editor = sp.edit();
+            editor.putInt("font_key", fontSize);
+            editor.commit();
+        }
     }
     public void setHomeview(View view)
     {
-        setContentView((R.layout.activity_main));
+                setContentView(R.layout.activity_main);
     }
+
 
     public void setSettingsview(View view) { setContentView((R.layout.settings_layout));
         TextView fontTxt = (TextView) findViewById(R.id.fontSize);
@@ -77,68 +59,84 @@ public class HomeActivity extends AppCompatActivity {
                 }
                 TextView fontTxt = (TextView) findViewById(R.id.fontSize);
                 fontTxt.setText(String.valueOf(fontSize));
+                SharedPreferences sp = getSharedPreferences("font_pref", Activity.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sp.edit();
+                editor.putInt("font_key", fontSize);
+                editor.commit();
             }
-
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
+            public void onStartTrackingTouch(SeekBar seekBar) {}
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
+            public void onStopTrackingTouch(SeekBar seekBar) {}
         });
     }
 
-    public void setListview(View view) { setContentView((R.layout.listview_layout)); }
+    public void setListview(View view) { setContentView((R.layout.listview_layout)); } // TODO: Fix list view button for article 6.
+
+    public void resetSettings(View view)
+    {
+        fontSize = 14;
+        TextView fontTxt = (TextView) findViewById(R.id.fontSize);
+        fontTxt.setText(String.valueOf(fontSize));
+        final SeekBar fsk=(SeekBar) findViewById(R.id.fontSlider);
+        fsk.setProgress(fontSize);
+        SharedPreferences sp = getSharedPreferences("font_pref", Activity.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putInt("font_key", fontSize);
+        editor.commit();
+    }
+
 
     public void OpenArticle1(View view)
     {
        setContentView((R.layout.article1_layout));
+       TextView main_article_text = (TextView) findViewById(R.id.Article1Text);
+       main_article_text.setTextSize(fontSize);
     }
 
     public void OpenArticle2(View view)
     {
         setContentView((R.layout.article2_layout));
+        TextView main_article_text = (TextView) findViewById(R.id.Article2Text);
+        main_article_text.setTextSize(fontSize);
     }
 
     public void OpenArticle3(View view)
     {
         setContentView((R.layout.article3_layout));
+        TextView main_article_text = (TextView) findViewById(R.id.Article3Text);
+        main_article_text.setTextSize(fontSize);
     }
 
     public void OpenArticle4(View view)
     {
         setContentView((R.layout.article4_layout));
+        TextView main_article_text = (TextView) findViewById(R.id.Article4Text);
+        main_article_text.setTextSize(fontSize);
     }
 
     public void OpenArticle5(View view)
     {
         setContentView((R.layout.article5_layout));
+        TextView main_article_text = (TextView) findViewById(R.id.Article5Text);
+        main_article_text.setTextSize(fontSize);
     }
 
-
-
-   /* @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+    public void OpenArticle6(View view)
+    {
+        setContentView((R.layout.article6_layout));
+        TextView main_article_text = (TextView) findViewById(R.id.Article6Text);
+        main_article_text.setTextSize(fontSize);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }*/
+    public void setCreditView(View view)
+    {
+        setContentView((R.layout.credits));
+    }
+    public void setTAAView(View view)
+    {
+        setContentView((R.layout.termsandagreements));
+        TextView main_article_text = (TextView) findViewById(R.id.tagText);
+        main_article_text.setTextSize(fontSize);
+    }
 }

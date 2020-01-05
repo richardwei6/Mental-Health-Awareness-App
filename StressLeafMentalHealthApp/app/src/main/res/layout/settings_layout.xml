@@ -46,4 +46,61 @@
         app:layout_constraintStart_toEndOf="@+id/fontSlider"
         app:layout_constraintTop_toTopOf="@+id/fontSlider" />
 
+    <Button
+        android:id="@+id/gotoCreditsButton"
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_rounded_btn_background"
+        android:backgroundTint="@color/colorSecondary"
+        android:gravity="left"
+        android:minHeight="48dip"
+        android:onClick="setCreditView"
+        android:padding="15sp"
+        android:text="Credits"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <Button
+        android:id="@+id/TermsAndAgreementsButton"
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_rounded_btn_background"
+        android:backgroundTint="@color/colorSecondary"
+        android:gravity="left"
+        android:minHeight="48dip"
+        android:onClick="setTAAView"
+        android:padding="15sp"
+        android:text="Terms and Agreements"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <Button
+        android:id="@+id/resetdefault"
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_rounded_btn_background"
+        android:backgroundTint="@color/colorSecondary"
+        android:gravity="left"
+        android:minHeight="48dip"
+        android:onClick="resetSettings"
+        android:padding="15sp"
+        android:text="Reset Settings"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
