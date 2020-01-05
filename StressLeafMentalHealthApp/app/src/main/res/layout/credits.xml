@@ -105,7 +105,7 @@
         android:minHeight="48dip"
         android:onClick="setCreditView"
         android:padding="15sp"
-        android:text="Graphic Designers"
+        android:text="Content Editors"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
