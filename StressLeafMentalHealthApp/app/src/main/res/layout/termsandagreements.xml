@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/green_gradient_background" />
+        app:srcCompat="@drawable/backgroundforarticles" />
 
     <TextView
         android:id="@+id/Article1Title"
@@ -24,7 +24,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/roundedcornerselected"
+        android:background="@drawable/roundedbuttonselected"
         android:fontFamily="@font/firasans_bold"
         android:padding="10sp"
         android:text="Terms and Agreements"

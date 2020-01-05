@@ -15,52 +15,68 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/green_gradient_background" />
+        app:srcCompat="@drawable/backgroundforarticles" />
 
     <TextView
-        android:id="@+id/Article1Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="30dp"
-        android:background="#4B297E03"
+        android:id="@+id/Article6Title"
+        android:layout_width="362dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:background="#00297E03"
         android:fontFamily="@font/firasans_bold"
         android:padding="10sp"
         android:text="@string/Article6_Title"
         android:textColor="#FFFFFF"
-        android:textSize="36sp"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:visibility="visible" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@id/AppBar"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Article1Title"
+        app:layout_constraintTop_toBottomOf="@+id/Article6Title"
         app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/Article1ConstraintLayout"
+            android:id="@+id/Article4ConstraintLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView"
+            <TextView
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/firasans_bold"
+                android:text="By Nina Wang"
+                android:textColor="#FBFBFB"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="404dp"
+                android:layout_height="340dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_launcher_foreground"
+                app:srcCompat="@drawable/stress"
                 tools:layout_conversion_absoluteHeight="352dp"
                 tools:layout_conversion_absoluteWidth="409dp" />
 
@@ -72,19 +88,11 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginRight="40dp"
-                android:background="#4B297E03"
+                android:background="#00297E03"
                 android:fontFamily="@font/firasans_regular"
                 android:lineSpacingExtra="8sp"
                 android:padding="10sp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus molestie nunc non. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Feugiat in fermentum posuere urna. Mattis nunc sed blandit libero volutpat sed cras ornare. Enim facilisis gravida neque convallis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Egestas sed tempus urna et pharetra pharetra massa massa. Odio ut enim blandit volutpat. Aliquam nulla facilisi cras fermentum odio. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Pretium lectus quam id leo in vitae turpis massa sed. Ipsum a arcu cursus vitae. Senectus et netus et malesuada fames.
-
-Habitant morbi tristique senectus et netus et malesuada fames. Eget est lorem ipsum dolor sit amet consectetur. Arcu bibendum at varius vel. Id aliquet risus feugiat in ante metus dictum at tempor. Vitae congue eu consequat ac. Ultricies mi eget mauris pharetra. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Eget duis at tellus at urna condimentum mattis. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Erat pellentesque adipiscing commodo elit at. Ipsum faucibus vitae aliquet nec ullamcorper sit.
-
-Euismod in pellentesque massa placerat duis ultricies lacus sed. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Amet nisl purus in mollis nunc sed. Massa ultricies mi quis hendrerit dolor magna eget. Laoreet suspendisse interdum consectetur libero id faucibus. Pharetra magna ac placerat vestibulum lectus. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Est ultricies integer quis auctor. Et malesuada fames ac turpis egestas integer eget aliquet. Nunc sed augue lacus viverra vitae congue. Cursus turpis massa tincidunt dui ut ornare lectus. Fames ac turpis egestas sed tempus urna. Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum lectus mauris ultrices eros in. Vel orci porta non pulvinar neque. Diam maecenas sed enim ut sem viverra aliquet eget. Tellus molestie nunc non blandit. Vitae auctor eu augue ut lectus arcu bibendum. Aliquam ultrices sagittis orci a scelerisque purus.
-
-Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Quis varius quam quisque id diam vel quam elementum pulvinar. Sit amet mattis vulputate enim nulla aliquet porttitor. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Sed egestas egestas fringilla phasellus faucibus scelerisque. Et ultrices neque ornare aenean euismod elementum nisi. Scelerisque purus semper eget duis at tellus. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Rhoncus aenean vel elit scelerisque mauris pellentesque. Arcu odio ut sem nulla. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Egestas tellus rutrum tellus pellentesque eu tincidunt. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Nulla pharetra diam sit amet nisl suscipit adipiscing.
-
-Erat velit scelerisque in dictum non consectetur a erat nam. Arcu dui vivamus arcu felis bibendum. Fermentum et sollicitudin ac orci. Risus feugiat in ante metus dictum at. Id neque aliquam vestibulum morbi blandit. Amet risus nullam eget felis eget nunc lobortis mattis. Nullam ac tortor vitae purus faucibus. Cursus risus at ultrices mi. Sit amet justo donec enim diam vulputate ut pharetra. Nunc aliquet bibendum enim facilisis gravida neque. Quam nulla porttitor massa id neque. Purus sit amet luctus venenatis lectus. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Nulla porttitor massa id neque. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus."
+                android:text="At times, it may feel like there’s nothing you can do about your stress. In reality, the simple act of realizing that you’re in control of your own life is another step towards managing stress. You can do this by taking charge of your emotions, your lifestyle, and the way you deal with problems. No matter how stressful life may seem, there are always steps that you can take in order to relieve the pressure.   Tip #1: Identify the source(s) of stress in your life. While it is easy to pinpoint major stressors in life, such as moving, exams, and relationships, identifying chronic stressors may prove to be more difficult. Don’t overlook how much your daily thoughts and behaviors can contribute to your stress levels.   Look closely at your everyday habits and excuses: Do you explain your stress as temporary, even though you can’t remember the last time you took a break? Do you define stress as an integral part of your home/work life, or as a part of your personality? Do you place blame on others or outside events as a factor of your stress, or do you view stress to be normal?  Your stress levels will remain unchanged unless you accept responsibility for the role you play in creating it.   Tip #2: Practice the 4 A’s of stress management.  Avoid unnecessary stress -Learn how to say “no.”  Know your limits and stick to them. Resist the pressure to have to say “yes” to everything, regardless of whether you can handle it or not.  -Avoid people who stress you out. Limit the amount of time you spend with people who cause unwanted stress in your life, or end the relationship completely.  -Take control of the environment. If you get anxiety from watching the daily news, turn off the TV. If going to a crowded mall to purchase items makes you stressed, resort to online shopping.   Alter the situation -Be willing to compromise. When you ask someone to change their behavior, you must be willing to do the same. Finding a middle ground may require some bending from both sides.  -Create a balanced schedule. All work and no play = major burnout. Try to find a balance between your social life, your worklife, and your personal life.      Adapt to the stressor -Look at the big picture. How important is the stressor in the grand scheme of things? Will it affect you in a couple months, a couple years? Take perspective of the situation, and if it’s not a big deal, focus your energy into something more worthwhile.  -Adjust your standards. Perfectionism may lead to unnecessary stress. Stop setting yourself up for disappointment and failure by demanding perfection. Start setting realistic goals for yourself and others.   Accept the things you can’t change -Look for the upside. When facing hardships and setbacks, look at them as opportunities for personal growth. -Learn to forgive. Accept the fact that we all live in an imperfect world, and everyone makes mistakes. Free yourself from negative energy by moving on.  -Share your feelings. Expressing your feelings can be incredibly beneficial, so talk to a trusted friend or go to a professional.   Tip #3: Learn to relieve stress in the moment Whether you’re in the middle of a confusing math lesson, or in an argument with a close friend, you’ll need to find ways to relieve your tension in the moment. That’s where quick stress-relief practices come in.   The fastest way to calm down is by using your senses - what you see, hear, feel, taste, and smell - or through soothing movements. Simply by looking at a favorite picture, hugging a pet, or listening to your favorite music, you can relax and focus yourself. The key to quick stress relief, however, is by experimenting and discovering the unique sensory experiences that work for you.    "
                 android:textColor="#F0F3F0"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -15,52 +15,67 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/green_gradient_background" />
+        app:srcCompat="@drawable/background_final_article" />
 
     <TextView
-        android:id="@+id/Article5Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="30dp"
-        android:background="#4B297E03"
+        android:id="@+id/Article6Title"
+        android:layout_width="360dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="50dp"
+        android:background="#00297E03"
         android:fontFamily="@font/firasans_bold"
         android:padding="10sp"
         android:text="@string/Article5_Title"
         android:textColor="#FFFFFF"
-        android:textSize="36sp"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:visibility="visible" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="492dp"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@id/AppBar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Article5Title"
+        app:layout_constraintTop_toBottomOf="@+id/Article6Title"
         app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/Article5ConstraintLayout"
+            android:id="@+id/Article4ConstraintLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView"
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/firasans_bold"
+                android:text="By Jocelyn Thao"
+                android:textColor="#FBFBFB"
+                android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="312dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_launcher_foreground"
+                app:srcCompat="@drawable/article5image"
                 tools:layout_conversion_absoluteHeight="352dp"
                 tools:layout_conversion_absoluteWidth="409dp" />
 
@@ -72,33 +87,43 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginRight="40dp"
-                android:background="#4B297E03"
+                android:background="#00297E03"
                 android:fontFamily="@font/firasans_regular"
                 android:lineSpacingExtra="8sp"
                 android:padding="10sp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus molestie nunc non. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Feugiat in fermentum posuere urna. Mattis nunc sed blandit libero volutpat sed cras ornare. Enim facilisis gravida neque convallis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Egestas sed tempus urna et pharetra pharetra massa massa. Odio ut enim blandit volutpat. Aliquam nulla facilisi cras fermentum odio. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Pretium lectus quam id leo in vitae turpis massa sed. Ipsum a arcu cursus vitae. Senectus et netus et malesuada fames.
+                android:text="With the stress of college admissions, students’ schedules are becoming more and more jam-packed with event after event, meeting after meeting, rehearsal after rehearsal, volunteering after volunteering...the list goes on...all on top of piles of homework and the pressure to succeed academically. However, it’s important to stay in touch with your personal interests and actively engage in your hobbies.
 
-Habitant morbi tristique senectus et netus et malesuada fames. Eget est lorem ipsum dolor sit amet consectetur. Arcu bibendum at varius vel. Id aliquet risus feugiat in ante metus dictum at tempor. Vitae congue eu consequat ac. Ultricies mi eget mauris pharetra. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Eget duis at tellus at urna condimentum mattis. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Erat pellentesque adipiscing commodo elit at. Ipsum faucibus vitae aliquet nec ullamcorper sit.
+There are several mental benefits to having and keeping up with a hobby. Research shows that people who practice their hobbies feel happier and more relaxed, and are less likely to suffer from low mood, stress, and depression.
 
-Euismod in pellentesque massa placerat duis ultricies lacus sed. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Amet nisl purus in mollis nunc sed. Massa ultricies mi quis hendrerit dolor magna eget. Laoreet suspendisse interdum consectetur libero id faucibus. Pharetra magna ac placerat vestibulum lectus. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Est ultricies integer quis auctor. Et malesuada fames ac turpis egestas integer eget aliquet. Nunc sed augue lacus viverra vitae congue. Cursus turpis massa tincidunt dui ut ornare lectus. Fames ac turpis egestas sed tempus urna. Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum lectus mauris ultrices eros in. Vel orci porta non pulvinar neque. Diam maecenas sed enim ut sem viverra aliquet eget. Tellus molestie nunc non blandit. Vitae auctor eu augue ut lectus arcu bibendum. Aliquam ultrices sagittis orci a scelerisque purus.
+Hobbies also help to structure your time. When you set aside time to practice our hobby, there’s less time in the day to spend doing more frivolous things that require less time, such as replying to emails or laboring over a project. Simply put, scheduling time for hobbies encourages efficiency, which can alleviate the stress caused by dragging things out.
 
-Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Quis varius quam quisque id diam vel quam elementum pulvinar. Sit amet mattis vulputate enim nulla aliquet porttitor. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Sed egestas egestas fringilla phasellus faucibus scelerisque. Et ultrices neque ornare aenean euismod elementum nisi. Scelerisque purus semper eget duis at tellus. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Rhoncus aenean vel elit scelerisque mauris pellentesque. Arcu odio ut sem nulla. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Egestas tellus rutrum tellus pellentesque eu tincidunt. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Nulla pharetra diam sit amet nisl suscipit adipiscing.
+Having a hobby makes you more interesting and can help foster social connections, which have been shown to be key to feeling happy. It can create a common ground between you and others that you otherwise wouldn’t normally engage with and can give you something interesting to talk about.
 
-Erat velit scelerisque in dictum non consectetur a erat nam. Arcu dui vivamus arcu felis bibendum. Fermentum et sollicitudin ac orci. Risus feugiat in ante metus dictum at. Id neque aliquam vestibulum morbi blandit. Amet risus nullam eget felis eget nunc lobortis mattis. Nullam ac tortor vitae purus faucibus. Cursus risus at ultrices mi. Sit amet justo donec enim diam vulputate ut pharetra. Nunc aliquet bibendum enim facilisis gravida neque. Quam nulla porttitor massa id neque. Purus sit amet luctus venenatis lectus. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Nulla porttitor massa id neque. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus."
+There are thousands of different hobbies, but here are just a few general ones in case you’re having trouble finding the right one. Hobbies vary from person to person and may be academic, creative, academic or something distinctly personal.
+
+1. Exercise. Physical activity causes the brain and other parts of the nervous system to release endorphins, neurotransmitters that are partially responsible for positive feelings, thus naturally combating depression. Experts say that exercising is a good way for those suffering from mild or moderate depression to cope, so it might not be the answer for those who are severely depressed. Additionally, exercise can become unhealthy if done incorrectly or in excess, so it is important to establish a healthy and doable workout. It can be as simple as completing a short routine during study breaks, or a complex as going to the gym or taking workout classes. If there’s time on the weekends, you can even go hiking or try something like new like surfing so as to both boost your endorphins and physically distance yourself from the stress of school.
+
+2. Journaling. Whether it be physical or digital, daily or just when you need to let it all out, journaling is a great way to purge your feelings from your mind and let them spill out on paper (or a digital document). Writing out your feelings and frustrations can also help you think through them more clearly and rationally, helping you come to better conclusions in a healthier way. Journaling doesn’t have to take up a whole lot of time either; you can write anything from a few sentences to several pages— whatever it takes for you to feel better.
+
+3. Making art or music. Even if you don’t see yourself as the “artist” type, you can still pick up a pen and get to doodling or learn to play a new instrument through online lessons! Making art/music not only gets your creativity flowing, but can also be a great stress-reliever, allowing you to unleash your feelings in a more artistic manner.
+
+If these activities don’t work for you, keep trying new things until you find something (or some things) that you enjoy and that is meaningful to you! Some other possible hobbies include woodworking, cooking/baking, creative writing, knitting, and crafting, but there are so many more hobbies out there, and you don’t have to pick just one! The important thing is that you are engaging in a fun, interesting activity that you can use to take your mind off the stress of school and day-to-day life."
                 android:textColor="#F0F3F0"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView"
                 tools:layout_conversion_absoluteHeight="2811dp"
                 tools:layout_conversion_absoluteWidth="369dp" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
     <include
         android:id="@+id/include"
         layout="@layout/navigation_bar" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
