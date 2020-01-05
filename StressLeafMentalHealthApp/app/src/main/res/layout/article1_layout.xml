@@ -19,17 +19,16 @@
 
     <TextView
         android:id="@+id/Article1Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:background="#4B297E03"
         android:fontFamily="@font/firasans_bold"
         android:padding="10sp"
         android:text="@string/Article1_Title"
         android:textColor="#FFFFFF"
-        android:textSize="36sp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
@@ -55,12 +54,12 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="201dp"
+                android:layout_height="172dp"
+                android:src="@drawable/ic_photo_1477332552946_cfb384aeaf1c"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_launcher_foreground"
                 tools:layout_conversion_absoluteHeight="352dp"
                 tools:layout_conversion_absoluteWidth="409dp" />
 
@@ -76,15 +75,27 @@
                 android:fontFamily="@font/firasans_regular"
                 android:lineSpacingExtra="8sp"
                 android:padding="10sp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus molestie nunc non. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Feugiat in fermentum posuere urna. Mattis nunc sed blandit libero volutpat sed cras ornare. Enim facilisis gravida neque convallis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Egestas sed tempus urna et pharetra pharetra massa massa. Odio ut enim blandit volutpat. Aliquam nulla facilisi cras fermentum odio. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Pretium lectus quam id leo in vitae turpis massa sed. Ipsum a arcu cursus vitae. Senectus et netus et malesuada fames.
+                android:text="
+The pressure to succeed both academically and in terms of extracurriculars places a lot of stress on students, which can lead to depression and anxiety. Studies show that these feelings are a real threat amongst students.
 
-Habitant morbi tristique senectus et netus et malesuada fames. Eget est lorem ipsum dolor sit amet consectetur. Arcu bibendum at varius vel. Id aliquet risus feugiat in ante metus dictum at tempor. Vitae congue eu consequat ac. Ultricies mi eget mauris pharetra. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Eget duis at tellus at urna condimentum mattis. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Erat pellentesque adipiscing commodo elit at. Ipsum faucibus vitae aliquet nec ullamcorper sit.
+In 2016, over 60% of secondary school students reported that they suffered from symptoms of depression, and 40% reported suffering from anxiety. In the United States, 44% of college students reported feeling symptoms of depression.
 
-Euismod in pellentesque massa placerat duis ultricies lacus sed. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Amet nisl purus in mollis nunc sed. Massa ultricies mi quis hendrerit dolor magna eget. Laoreet suspendisse interdum consectetur libero id faucibus. Pharetra magna ac placerat vestibulum lectus. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Est ultricies integer quis auctor. Et malesuada fames ac turpis egestas integer eget aliquet. Nunc sed augue lacus viverra vitae congue. Cursus turpis massa tincidunt dui ut ornare lectus. Fames ac turpis egestas sed tempus urna. Lorem ipsum dolor sit amet consectetur adipiscing elit. Vestibulum lectus mauris ultrices eros in. Vel orci porta non pulvinar neque. Diam maecenas sed enim ut sem viverra aliquet eget. Tellus molestie nunc non blandit. Vitae auctor eu augue ut lectus arcu bibendum. Aliquam ultrices sagittis orci a scelerisque purus.
+These statistics only show the number of students who reported their feelings, so the exact frequency of the problem is still unknown, making the student mental health crisis even more dangerous.
 
-Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Quis varius quam quisque id diam vel quam elementum pulvinar. Sit amet mattis vulputate enim nulla aliquet porttitor. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Sed egestas egestas fringilla phasellus faucibus scelerisque. Et ultrices neque ornare aenean euismod elementum nisi. Scelerisque purus semper eget duis at tellus. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Rhoncus aenean vel elit scelerisque mauris pellentesque. Arcu odio ut sem nulla. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Egestas tellus rutrum tellus pellentesque eu tincidunt. Facilisis magna etiam tempor orci eu lobortis elementum nibh. Nulla pharetra diam sit amet nisl suscipit adipiscing.
+However, there are plenty of things that students can do to help keep themselves in a happy and healthy learning environment.
 
-Erat velit scelerisque in dictum non consectetur a erat nam. Arcu dui vivamus arcu felis bibendum. Fermentum et sollicitudin ac orci. Risus feugiat in ante metus dictum at. Id neque aliquam vestibulum morbi blandit. Amet risus nullam eget felis eget nunc lobortis mattis. Nullam ac tortor vitae purus faucibus. Cursus risus at ultrices mi. Sit amet justo donec enim diam vulputate ut pharetra. Nunc aliquet bibendum enim facilisis gravida neque. Quam nulla porttitor massa id neque. Purus sit amet luctus venenatis lectus. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Nulla porttitor massa id neque. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus."
+1. Take a shower immediately after getting home. If you tend to shower in the morning or right before bed, try switching it up by showering after you get home. Taking a quick shower will help wash away any stress or tension that’s built up over the course of the day, leaving you feeling refreshed and ready to settle down and start studying. Studies even show a general boost in mood post-shower!
+
+2. Maintain healthy eating habits. Regular eating habits are essential for keeping your mood up. Studies link a bad mood with eating unhealthy food and eating irregularly. Additionally, regular eating habits boost metabolism and give you enough energy to get through the day. Make sure to eat breakfast because it is the most important meal of the day. Even a small piece of bread or a fruit will boost your mood throughout the day.
+
+3. Sleep. Getting enough sleep every night is not only essential to staying energized throughout the day, but is also important to warding away depression and staying physically healthy. Many students fall into irregular sleeping patterns because of late-night studying, however getting enough rest is necessary to maintaining focus at school. Not only that, sleep helps memory formation and thus aids in academic success.
+
+4. Talk to someone. Arrange an appointment with your school counselor to discuss what’s going on. If you don’t feel comfortable with your counselor, confide in a trusted adult: a teacher, your parents, or a licensed professional. At first, it may be difficult to open up, but in the long run, getting your feelings out and trying to understand them with someone is ultimately beneficial.
+
+5. Go outside. Studies show that our workspaces are linked to our mental spaces, so taking a break from studying every once in a while to go outside is a great way to distance your mind from the stress of school.
+
+
+"
                 android:textColor="#F0F3F0"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"

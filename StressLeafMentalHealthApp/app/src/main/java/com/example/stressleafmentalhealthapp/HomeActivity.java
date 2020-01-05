@@ -71,7 +71,20 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-    public void setListview(View view) { setContentView((R.layout.listview_layout)); } // TODO: Fix list view button for article 6.
+    public void setListview(View view) { setContentView((R.layout.listview_layout));
+        TextView b1  = (TextView) findViewById(R.id.listview_layout_GoToArticle1_btn);
+        b1.setTextSize(fontSize);
+        TextView b2  = (TextView) findViewById(R.id.listview_layout_GoToArticle2_btn);
+        b2.setTextSize(fontSize);
+        TextView b3  = (TextView) findViewById(R.id.listview_layout_GoToArticle3_btn);
+        b3.setTextSize(fontSize);
+        TextView b4  = (TextView) findViewById(R.id.listview_layout_GoToArticle4_btn);
+        b4.setTextSize(fontSize);
+        TextView b5  = (TextView) findViewById(R.id.listview_layout_GoToArticle5_btn);
+        b5.setTextSize(fontSize);
+        TextView b6  = (TextView) findViewById(R.id.listview_layout_GoToArticle6_btn);
+        b6.setTextSize(fontSize);
+    } // TODO: Fix list view button for article 6.
 
     public void resetSettings(View view)
     {
