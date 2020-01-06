@@ -154,5 +154,8 @@ public class HomeActivity extends AppCompatActivity {
         main_article_text.setTextSize(fontSize);
     }
 
-    public void setSummaryView(View view) { setContentView((R.layout.summary)); }
+    public void setSummaryView(View view) { setContentView((R.layout.summary));
+        TextView main_article_text = (TextView) findViewById(R.id.summary_text);
+        main_article_text.setTextSize(fontSize);
+    }
 }
