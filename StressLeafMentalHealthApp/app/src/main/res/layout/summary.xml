@@ -50,8 +50,8 @@
                 android:layout_height="378dp"
                 android:layout_gravity="center"
                 android:foregroundGravity="center_vertical|center"
-                android:paddingTop="20"
-                android:paddingBottom="20"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
                 app:srcCompat="@drawable/stress_image" />
 
             <TextView
@@ -68,6 +68,8 @@
             <include
                 android:id="@+id/include"
                 layout="@layout/navigation_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center" />
         </LinearLayout>
     </ScrollView>
