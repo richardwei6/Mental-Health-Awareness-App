@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/summary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroundforarticles"
+        android:contentDescription="TODO" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/summary_title"
+                android:layout_width="342dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:background="#857790D8"
+                android:fontFamily="@font/firasans_bold"
+                android:gravity="center"
+                android:text="Stress, What Is It?"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/summary_image"
+                android:layout_width="348dp"
+                android:layout_height="378dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center_vertical|center"
+                android:paddingTop="20"
+                android:paddingBottom="20"
+                app:srcCompat="@drawable/stress_image" />
+
+            <TextView
+                android:id="@+id/summary_text"
+                android:layout_width="328dp"
+                android:layout_height="439dp"
+                android:layout_gravity="center"
+                android:background="#857790D8"
+                android:fontFamily="@font/firasans_regular"
+                android:gravity="fill_horizontal"
+                android:text="Stress is how the brain and body respond to any demand. Any type of challenge—such as performance at work or school, a significant life change, or a traumatic event—can be stressful.  Stress can affect your health. It is important to pay attention to how you deal with minor and major stressors, so you know when to seek help."
+                android:textSize="24sp" />
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/navigation_bar"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

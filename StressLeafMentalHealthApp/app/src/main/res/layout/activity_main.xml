@@ -35,6 +35,28 @@
         app:srcCompat="@drawable/treehome" />
 
     <Button
+        android:id="@+id/SummaryOfStress"
+        android:layout_width="142dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="251dp"
+        android:layout_marginRight="251dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/firasans_regular"
+        android:onClick="setSummaryView"
+        android:text="What is stress?"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treehome"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
         android:id="@+id/GoToArticle1_btn"
         android:layout_width="60dp"
         android:layout_height="60dp"

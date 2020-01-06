@@ -146,10 +146,13 @@ public class HomeActivity extends AppCompatActivity {
     {
         setContentView((R.layout.credits));
     }
+
     public void setTAAView(View view)
     {
         setContentView((R.layout.termsandagreements));
         TextView main_article_text = (TextView) findViewById(R.id.tagText);
         main_article_text.setTextSize(fontSize);
     }
+
+    public void setSummaryView(View view) { setContentView((R.layout.summary)); }
 }
