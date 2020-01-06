@@ -65,13 +65,15 @@
                 android:text="Stress is how the brain and body respond to any demand. Any type of challenge—such as performance at work or school, a significant life change, or a traumatic event—can be stressful.  Stress can affect your health. It is important to pay attention to how you deal with minor and major stressors, so you know when to seek help."
                 android:textSize="24sp" />
 
-            <include
-                android:id="@+id/include"
-                layout="@layout/navigation_bar"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center" />
         </LinearLayout>
     </ScrollView>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteY="924dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
