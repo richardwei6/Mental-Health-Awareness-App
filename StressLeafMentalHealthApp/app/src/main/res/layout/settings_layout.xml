@@ -9,15 +9,6 @@
     tools:context=".HomeActivity">
 
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:onClick="setHomeview"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_backspace" />
-
     <SeekBar
         android:id="@+id/fontSlider"
         android:layout_width="208dp"
@@ -49,7 +40,7 @@
     <Button
         android:id="@+id/gotoCreditsButton"
         android:layout_width="262dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/listview_rounded_btn_background"
         android:backgroundTint="@color/colorSecondary"
         android:gravity="left"
@@ -57,10 +48,11 @@
         android:onClick="setCreditView"
         android:padding="15sp"
         android:text="Credits"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.433" />
@@ -68,7 +60,8 @@
     <Button
         android:id="@+id/TermsAndAgreementsButton"
         android:layout_width="262dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@drawable/listview_rounded_btn_background"
         android:backgroundTint="@color/colorSecondary"
         android:gravity="left"
@@ -76,18 +69,16 @@
         android:onClick="setTAAView"
         android:padding="15sp"
         android:text="Terms and Agreements"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+        app:layout_constraintStart_toStartOf="@+id/gotoCreditsButton"
+        app:layout_constraintTop_toBottomOf="@+id/gotoCreditsButton" />
 
     <Button
         android:id="@+id/resetdefault"
         android:layout_width="262dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@drawable/listview_rounded_btn_background"
         android:backgroundTint="@color/colorSecondary"
         android:gravity="left"
@@ -95,12 +86,20 @@
         android:onClick="resetSettings"
         android:padding="15sp"
         android:text="Reset Settings"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/TermsAndAgreementsButton"
+        app:layout_constraintTop_toBottomOf="@+id/TermsAndAgreementsButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:onClick="setHomeview"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.679" />
+        app:srcCompat="@drawable/ic_backspace" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

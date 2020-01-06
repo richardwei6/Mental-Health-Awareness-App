@@ -20,7 +20,7 @@
     <TextView
         android:id="@+id/Article1Title"
         android:layout_width="370dp"
-        android:layout_height="147dp"
+        android:layout_height="wrap_content"
         android:background="#00297E03"
         android:fontFamily="@font/firasans_bold"
         android:padding="10sp"
@@ -29,7 +29,6 @@
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -39,14 +38,12 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="487dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="10dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Article1Title"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/Article1Title">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/Article4ConstraintLayout"
@@ -65,7 +62,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.109"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Article1Title" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -82,12 +79,12 @@
                 android:id="@+id/Article1Text"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginEnd="40dp"
-                android:layout_marginRight="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
                 android:background="#00297E03"
-                android:fontFamily="@font/firasans_regular"
+                android:fontFamily="@font/firasans_bold"
                 android:lineSpacingExtra="8sp"
                 android:padding="10sp"
                 android:text="The pressure to succeed both academically and in terms of extracurriculars places a lot of stress on students, which can lead to depression and anxiety. Studies show that these feelings are a real threat amongst students.   In 2016, over 60% of secondary school students reported that they suffered from symptoms of depression, and 40% reported suffering from anxiety. In the United States, 44% of college students reported feeling symptoms of depression.   These statistics only show the number of students who reported their feelings, so the exact frequency of the problem is still unknown, making the student mental health crisis even more dangerous.   However, there are plenty of things that students can do to help keep themselves in a happy and healthy learning environment.   1. Take a shower immediately after getting home. If you tend to shower in the morning or right before bed, try switching it up by showering after you get home. Taking a quick shower will help wash away any stress or tension that’s built up over the course of the day, leaving you feeling refreshed and ready to settle down and start studying. Studies even show a general boost in mood post-shower!  2. Maintain healthy eating habits. Regular eating habits are essential for keeping your mood up. Studies link a bad mood with eating unhealthy food and eating irregularly. Additionally, regular eating habits boost metabolism and give you enough energy to get through the day. Make sure to eat breakfast because it is the most important meal of the day. Even a small piece of bread or a fruit will boost your mood throughout the day.   3. Sleep. Getting enough sleep every night is not only essential to staying energized throughout the day, but is also important to warding away depression and staying physically healthy. Many students fall into irregular sleeping patterns because of late-night studying, however getting enough rest is necessary to maintaining focus at school. Not only that, sleep helps memory formation and thus aids in academic success.   4. Talk to someone. Arrange an appointment with your school counselor to discuss what’s going on. If you don’t feel comfortable with your counselor, confide in a trusted adult: a teacher, your parents, or a licensed professional. At first, it may be difficult to open up, but in the long run, getting your feelings out and trying to understand them with someone is ultimately beneficial.   5. Go outside. Studies show that our workspaces are linked to our mental spaces, so taking a break from studying every once in a while to go outside is a great way to distance your mind from the stress of school. "

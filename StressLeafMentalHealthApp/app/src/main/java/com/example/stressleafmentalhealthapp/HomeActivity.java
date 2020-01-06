@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
     int fontSize = 14; // default value
@@ -71,7 +72,8 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
-    public void setListview(View view) { setContentView((R.layout.listview_layout));
+    public void setListview(View view) {
+        setContentView((R.layout.listview_layout));
         TextView b1  = (TextView) findViewById(R.id.listview_layout_GoToArticle1_btn);
         b1.setTextSize(fontSize);
         TextView b2  = (TextView) findViewById(R.id.listview_layout_GoToArticle2_btn);
@@ -97,6 +99,11 @@ public class HomeActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sp.edit();
         editor.putInt("font_key", fontSize);
         editor.commit();
+        Toast.makeText(
+                getApplicationContext(),
+                "Settings reset",
+                Toast.LENGTH_SHORT
+        ).show();
     }
 
 
