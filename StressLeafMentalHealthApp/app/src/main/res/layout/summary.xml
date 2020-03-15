@@ -60,7 +60,7 @@
                 android:background="#857790D8"
                 android:fontFamily="@font/firasans_regular"
                 android:gravity="fill_horizontal"
-                android:text="Stress is how the brain and body respond to any demand. Any type of challenge—such as performance at work or school, a significant life change, or a traumatic event—can be stressful.  Stress can affect your health. It is important to pay attention to how you deal with minor and major stressors, so you know when to seek help. "
+                android:text="Stress is how the brain and body respond to any demand. Any type of challenge—such as performance at work or school, a significant life change, or a traumatic event—can be stressful.  Stress can affect your health. It is important to pay attention to how you deal with minor and major stressors, so you know when to seek help. The purpose of our app is the alleviate the effects of stress, anxiety, and other mental health problems at Arcadia High School by providing articles to read more about the origin of their issues. Other articles provided by our app include ways to divert students' focus from their problems and instead informing the students different hobbies they can take on. "
                 android:textColor="#F0F3F0"
                 android:textSize="24sp" />
 
